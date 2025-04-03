@@ -1,3 +1,6 @@
+#Cosmoabc will print out a data file for each iteration/particle system made. This file creates an array of the final iteration file numbers for each job right before it converged. 
+#It will also print out the job numbers, this is useful for checking if all the jobs were successful.
+
 import os
 import re
 from collections import defaultdict

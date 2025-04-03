@@ -192,7 +192,7 @@ def transit_SNR(P, Rp, dur, R, u1, u2, Tobs, fduty, std):
 		u2: float, limb darkening parameter
 		Tobs: float, observation time in days
 		fduty: float, duty cycle
-		std: float, standard deviation of noise
+		std: float, noise
 
 	Output:
 		SNR: float, signal-to-noise ratio

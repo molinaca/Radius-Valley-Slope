@@ -49,7 +49,7 @@ with open(file, 'a') as f2:
 
 ## Create input file
 f = open(f'input_file_{job_id}.txt','w+')
-f.write('path_to_obs = ./Exo-Occurrence/Data/FGK_planets.dat # \n')
+f.write('path_to_obs = /home/molinaca//Data/FGK_planets.dat # \n')
 
 #Write paramteres r1-r{number_rbins}
 b = 0

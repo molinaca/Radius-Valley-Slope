@@ -3,15 +3,14 @@
 #Documentation for how to set up the input file can be found at https://pypi.org/project/cosmoabc/
 
 import numpy as np
-import os
 
 #######################################
 
 ## Create input file
-f = open(f'input_file_gapfit.txt','w+')
-f.write('path_to_obs = ./Exo-Occurrence/Data/FGK_planets.dat # \n')
+f = open(f'input_file_gauss.txt','w+')
+f.write('path_to_obs = /home/molinaca/Data/FGK_planets.dat # \n') #Change to your path 
 
-#Write paramteres r1-r{number_rbins}
+#Write parameter data 
 
 f.write('param_to_fit = n1 mean1p mean1r cov1p cov1pr cov1r n2 mean2p mean2r cov2p cov2pr cov2r')
 f.write(' # \n')
@@ -28,7 +27,7 @@ while b < n_param:
 	b += 1
 f.write(' # \n')
 
-#Get paramter values for first gaussian 
+#Get parameter values for first gaussian 
 f.write(f'n1_prior_par_name = pmin pmax # \n')
 f.write(f'n1_prior_par_val = 0.15 0.28 # \n')
 f.write(f'n1_lim = 0.10 0.30 # \n')
@@ -59,7 +58,7 @@ f.write(f'cov1r_prior_par_val = 0.01 0.08 # \n')
 f.write(f'cov1r_lim = 0.01 0.08 # \n')
 f.write(f'cov1r = 0.02 # \n')
 
-#Get paramtere values for second gaussian
+#Get parameter values for second gaussian
 
 f.write(f'n2_prior_par_name = pmin pmax # \n')
 f.write(f'n2_prior_par_val = 0.15 0.28 # \n')
